@@ -31,7 +31,6 @@ export class AppComponent {
       this.selectedEmployee.id = this.employeeArray.length + 1;
       this.employeeArray.push(this.selectedEmployee);
     }
-   
     this.selectedEmployee = new Employee();
   }
   onDelete(){
@@ -39,12 +38,10 @@ export class AppComponent {
       this.employeeArray = this.employeeArray.filter(x => x != this.selectedEmployee);
       this.selectedEmployee = new Employee();
     }
-    
-
   }
   openForEdit(employee: Employee){
     this.selectedEmployee = employee;
   }
-
+ 
   
 }
